@@ -1,0 +1,25 @@
+body {
+    background-color: whitesmoke;
+  }
+  
+  h1 {
+      text-align: center;
+  }
+  
+  div {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100px;
+    height: 70px;
+    background-color: white;
+    color: white;
+    border: 1px solid black;
+  }
+  
+  .isfib {
+    color: yellow;
+    border: brown;
+    border: 1px solid black;
+    background-color: yellow;
+  }
+  
