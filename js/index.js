@@ -1,19 +1,30 @@
-// Ingresar número
-addEventListener('load', function () {
-    iniciarPrograma();
-    function iniciarPrograma() {
-        let n = parseInt(prompt('Por favor, ingrese un número:'));
-        //validar que el número ingresado sea un entero
+/** 
+ * @description Enter an integer number
+ * @version 1.0
+ * @param {*} value  
+ * @returns 
+ */
+addEventListener('load', function() {
+    startProgram();
+
+    function startProgram() {
+        let n = parseInt(prompt('Please, enter an integer number:'));
+        //validate that the number entered is an integer
         if (Number.isInteger(n) && n > 0) {
-            let arrayFibonacci = generarFibonacci(n);
-            crearCuadrado(arrayFibonacci);
+            let arrayFibonacci = generateFibonacci(n);
+            createCard(arrayFibonacci);
         } else {
-            parseInt(prompt('El número ingresado no es un entero > 0'));
+            parseInt(prompt('The number entered is not an integer > 0'));
         }
     }
 
-    // Generar Fibonacci
-    function generarFibonacci(n) {
+    /** 
+     * @description Generate Fibonacci sequence 
+     * @version 1.0
+     * @param {*} value number
+     * @returns 
+     */
+    function generateFibonacci(n) {
         let fn = [0, 1];
         if (n <= 1) {
             return fn;
@@ -24,16 +35,21 @@ addEventListener('load', function () {
         return fn;
     }
 
-    // Crear los cuadrados + pintar de amarillo los correspondientes a la secuencia fibonacci15
-    function crearCuadrado(array) {
+    /** 
+     * @description Create the cards conditionally and paint on green those corresponding to the fibonacci sequence
+     * @version 1.0
+     * @param {*} value  
+     * @returns 
+     */
+
+    function createCard(array) {
         let body = ''
         for (let i = 1; i < array.length; i++) {
             if (array.includes(i)) {
                 body += `<div class="isfib">${i}</div>`
             } else {
-                body += `<div>${i}</div>`
+                body += `<div class="notfib">${i}</div>`
             }
-           // console.log(array[i]);
         }
         document.getElementById('fib').innerHTML = body;
     }
