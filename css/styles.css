@@ -15,9 +15,10 @@ div {
 }
 
 .isfib {
-    color: rgb(28, 180, 91);
+    background-image: linear-gradient(skyblue 33%, white 33%, white 66.66%, skyblue 66.66%);
     border: brown;
     border: 1px solid black;
+    color: skyblue;
     background-color: rgb(28, 180, 91);
 }
 
