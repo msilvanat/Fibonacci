@@ -38,7 +38,7 @@ addEventListener('load', function() {
     /** 
      * @description Create the cards conditionally and paint those corresponding to the fibonacci sequence
      * @version 1.0
-     * @param {*} value  
+     * @param {*} value array
      * @returns 
      */
 
