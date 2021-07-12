@@ -17,7 +17,6 @@ h1 {
     width: 100px;
     height: 100px;
     background-image: linear-gradient(skyblue 33%, white 33%, white 66.66%, skyblue 66.66%);
-    border: brown;
     border: 1px solid black;
     color: skyblue;
 }
@@ -26,7 +25,6 @@ h1 {
     width: 100px;
     height: 100px;
     color: white;
-    border: brown;
     border: 1px solid black;
     background-color: white;
 }
